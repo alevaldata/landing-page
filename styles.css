@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+  /* border: 0.5px solid; */
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url(https://st.depositphotos.com/56090970/52010/v/450/depositphotos_520107842-stock-illustration-seamless-pattern-doodle-style-hand.jpg);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+  justify-content: space-around;
+  position: sticky;
+  align-items: center;
+  padding: 5px 5px 10px;
+  top: 0px;
+  column-gap: 30px;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  width: min-content;
+  white-space: nowrap;
+  gap: 5px;
+}
+
+#header-img {
+  width: 80px;
+}
+
+#logo-name {
+  font-size: 2.3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav-bar {
+  display: contents;
+  align-items: center;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#nav-bar li {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+    color: rgb(105, 105, 105);
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.presentation h1 {
+  width: fit-content;
+  margin: 40px auto;
+  font-style: italic;
+  color: lavenderblush;
+  font-size: 2.3rem;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  text-shadow: 5px 3px 5px black;
+  text-align: center;
+}
+
+section {
+    scroll-margin-top: 100px;
+  }
+
+#features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-family: Verdana, Tahoma, serif;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  min-width: 220px;
+  max-width: 450px;
+  margin: 10px;
+  padding: 25px 15px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#mate-icon {
+  width: 75px;
+  margin: -14px;
+}
+
+i {
+  font-size: 55px;
+}
+
+.feature-desc {
+  text-align: left;
+}
+
+.feature-desc h1 {
+  margin-bottom: 5px;
+}
+
+#take-a-look {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+#video {
+  aspect-ratio: 16/10;
+  width: 100%;
+  max-width: 680px;
+}
+
+.products {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  width: fit-content;
+  background-color: snow;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.product-name {
+  padding: 10px 0;
+  width: 280px;
+  background-color: papayawhip;
+  font-size: 1.3rem;
+}
+
+.product-price {
+  font-size: 1.25rem;
+}
+
+.product-desc ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.suscribe {
+  margin: 70px auto;
+  width: fit-content;
+  background-color: antiquewhite;
+  padding: 20px 15px 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.suscribe h1 {
+  font-family: "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+
+#form {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+#email {
+  height: 1.8rem;
+  width: 330px;
+  max-width: 900px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+#submit {
+  border: unset;
+  border-radius: 3px;
+  width: fit-content;
+  padding: 10px 15px;
+  font-weight: 800;
+  background-color: orange;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+footer {
+    background-color: papayawhip;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    margin-top: 10px;
+    text-align: end;
+    color: darkslategray;
+}
+
+@media screen and (max-width: 950px) {
+    .products {
+        flex-direction: column;
+      }
+}
+
+@media screen and (max-width: 400px) {
+  section {
+    scroll-margin-top: 120px;
+  }
+}
