@@ -84,7 +84,7 @@ header {
 }
 
 section {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 140px;
   }
 
 #features {
@@ -251,10 +251,4 @@ footer a {
     .products {
         flex-direction: column;
       }
-}
-
-@media screen and (max-width: 400px) {
-  section {
-    scroll-margin-top: 150px;
-  }
 }
