@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: unset;
   padding: unset;
+  scroll-behavior: smooth;
   /* border: 0.5px solid; */
 }
 
@@ -38,7 +39,7 @@ header {
 
 #logo-name {
   font-size: 2.3rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #nav-bar {
@@ -65,7 +66,7 @@ header {
 }
 
 .nav-link:hover {
-    color: rgb(105, 105, 105);
+  color: rgb(105, 105, 105);
 }
 
 .container {
@@ -78,14 +79,14 @@ header {
   font-style: italic;
   color: lavenderblush;
   font-size: 2.3rem;
-  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-family: "Lucida Sans Unicode", sans-serif;
   text-shadow: 5px 3px 5px black;
   text-align: center;
 }
 
 section {
-    scroll-margin-top: 140px;
-  }
+  scroll-margin-top: 140px;
+}
 
 #features {
   display: flex;
@@ -221,34 +222,34 @@ i {
 }
 
 footer {
-    background-color: papayawhip;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Verdana, sans-serif;
+  background-color: papayawhip;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Verdana, sans-serif;
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
 
 footer a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .copyright {
-    margin-top: 10px;
-    text-align: end;
-    color: darkslategray;
+  margin-top: 10px;
+  text-align: end;
+  color: darkslategray;
 }
 
 @media screen and (max-width: 950px) {
-    .products {
-        flex-direction: column;
-      }
+  .products {
+    flex-direction: column;
+  }
 }
